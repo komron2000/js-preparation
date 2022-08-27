@@ -70,11 +70,11 @@
 
 
 //Задание 10
-let name;
-const LengthName = prompt("выдите пожалуйста ваше имя: ");
-let ss = LengthName+name;
-if(7 == name){
-    console.log("ваше имя чотки");
+// let name; Не нужно
+const LengthName = prompt("Введите ваше имя: ");  // Это строка у нас
+// let ss = LengthName+name; Это не нужно
+if(7 == LengthName.length){  // Мы проверяем длину строки
+    console.log("Правильное имя");
 }else{
-    console.log("ваше имя длиный");
+    console.log("Короткое имя");
 }
